@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f5f5dc;
+    align-items: center;
+    height: 60px;
+}
+.logo{
+    width: 100px;
+    height: 30px;
+    margin-left: 6%;
+}
+
+.list-item{
+    font-family: 'Roboto',sans-serif;
+    margin-left: 100px;
+}
+
+li{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    width: 650px;
+
+}
+
+.list-item>a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8a537e;
+    
+}
+
+.download-btn{
+    background-color: #a5f8df;
+    /* margin-top: 10px */
+    border-radius: 40px;
+    padding:16px;
+    text-decoration:none;
+    font-weight:bold;
+    display: inline-block;
+    /* margin-top: 6%; */
+    margin-left: 6%;
+    
+
+    
+}
+
+/* .title{
+    margin-left: 6%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.title>h1{
+    font-size: 34px;
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.first-para{
+    /* margin-top: %; */
+    margin-left: 6%;
+}
+.title a{
+    margin-top:2% ;
+}
+
+.home{
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    /* background-color: #805476; */
+}
+
+#boy{
+    z-index: 1;
+}
+
+.imgGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-40%);
+    transition: bottom 1s,left 2s;
+
+
+}
+
+.image:hover #shape{
+    bottom:70px;
+}
+
+.image:hover #boy{
+    left: 40%;
+
+}
+
+.about-container{
+    margin-top: 26%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.heading{
+    margin-top: -50px;
+    /* margin-left:-40px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center;   */
+}
+
+.about-content{
+    margin-top:80px ;
+    font-size: 1.3rem;
+}
+
+.about-img{
+    margin-top: 66px;
+}
+
+.heading>h2{
+    margin-left: -35px;
+    font-size: 2rem;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 .5rem 0;
+}
+
+.heading-skill{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.heading-skill>h2{
+    font-size: 2rem;
+}
+
+.skill-container{
+    margin: 3% 8% 8% 8%;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image-skill img{
+    width: 90%;
+    object-position: center;
+    padding: 2rem;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bar-container span,h3{
+
+    font-size: 1.2rem;
+
+}
+
+/* ====================bars==================== */
+.bar-container{
+    position: relative;
+}
+
+.base-bar{
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: .5rem;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+}
+
+.html-bar{
+    background-color:gray ;
+    width: 60%;
+}
+
+.css-bar{
+    background-color:gray ;
+    width: 70%;
+}
+
+.js-bar{
+    background-color:gray ;
+    width: 25%;
+}
+
+.react-bar{
+    background-color:gray ;
+    width: 5%;
+}
+
+/* ================contact================= */
+.heading-contact{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.icon-set{
+    display: flex;
+    justify-content: center;
+}
+
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: aquamarine;
+    border: 2px solid #000;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.25s;
+}
+
+.icon i{
+    font-size: 30px;
+    color: #000;
+    
+    
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+footer{
+    margin: 3% 0px;
+}
+
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,orange,red);
+    margin-bottom: 50px;
+    margin-right: 18px;
+
+}
+
+.up-arrow:hover i{
+   color: #fff;
+}
